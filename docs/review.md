@@ -67,8 +67,8 @@ Alternatively the following command can be typed into gfsh to launch Pulse in th
 
 Log into Pulse with the following credentials:  
 
-    username: *admin*  
-    password: *admin*  
+    username: admin
+    password: admin
 
 Once logged in click on green server box Icon in the Cluster View to see the Gemfire processes running on the server.  
 For the lab all processes will be on this machine.
