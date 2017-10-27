@@ -2,28 +2,16 @@
 
 The purpose of this lab is to get a basic understanding of how a Gemfire cluster works and how it can be used.
 
-
-=== Setting up the terminal session
-All instructions assume that the terminal session is started in the labs directory of the roadshow project. +
-Within the terminal execute the following steps: +
-[source]
-----
-[pivhdsne:Desktop]$ cd BigDataRoadshow
-[pivhdsne:BigDataRoadshow]$ cd labs/
-[pivhdsne:labs]$ ls
-gemfire  phd-hawq  preparing_labs.pdf  springxd
-[pivhdsne:labs]$
 ----
 
-=== Open up the labs instructions
-Ensure the lab instructions are open in a browser window: +
-https://github.com/Pivotal-Field-Engineering/BigDataRoadshow-labs/blob/master/labs/gemfire/README.adoc +
+## Exploring gfsh
 
+gfsh (Gemfire shell) is a interactive command line interface that allows you to, manage, moniter and administrate Gemfire processes.
 
-== Exploring gfsh
-gfsh (Gemfire shell) is a interactive command line interface that allows you to, manage, moniter and administrate Gemfire processes. +
-Through out this lab gfsh will be used to start and stop processes and also to initiate other commands to the cluster. +
-All instructions assume commands are being executed in gfsh and also that gfsh was launched from the labs folder of the BigDataRoadShow workspace. +
+Through out this lab gfsh will be used to start and stop processes and also to initiate other commands to the cluster.
+
+All instructions assume commands are being executed in gfsh and also that gfsh was launched from the labs folder of the BigDataRoadShow workspace.
+
 To get this folder do the following: +
 [source]
 ----
