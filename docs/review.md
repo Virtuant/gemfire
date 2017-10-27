@@ -71,9 +71,9 @@ Log into Pulse with the following credentials:
     password: *admin*  
 
 Once logged in click on green server box Icon in the Cluster View to see the Gemfire processes running on the server.  
-For the lab all processes will be on this machine.  
+For the lab all processes will be on this machine.
 
-image::images/pulse-cluster-view.png[]
+![image](https://user-images.githubusercontent.com/558905/32116635-73ac8646-bb19-11e7-81f0-58f235f03ed4.png)
 
 
 ## Start another Locator
@@ -160,8 +160,10 @@ At the end of this process a cluster with six members should be visible in gfsh 
     serverA  | 192.168.75.9(serverA:88547)<v2>:24402
     serverC  | 192.168.75.9(serverC:90642)<v4>:39304
     locatorA | 192.168.75.9(locatorA:72292:locator)<v0>:58229
- 
-image::images/pulse-full-cluster-view.png[]
+    
+
+![image](https://user-images.githubusercontent.com/558905/32116645-7d1d609c-bb19-11e7-9eb2-424175fae1e7.png)
+
 
 ## Adding Regions
 
@@ -209,11 +211,13 @@ In the top banner of Pulse the Regions count will also show 1.
 
 By clicking the Data tab in Pulse the viewer will show one large region.  
 
-image::images/pulse-data-first-region.png[]
+![image](https://user-images.githubusercontent.com/558905/32116652-85dc9c16-bb19-11e7-9a39-458608adc230.png)
+
 
 By click on this grey box, Pulse will show how the data is distributed across the servers.  
 
-image::images/pulse-data-first-region-members.png[]
+![image](https://user-images.githubusercontent.com/558905/32116658-8fdde44a-bb19-11e7-92b8-aa5986f491aa.png)
+
 
 Now create a Partitioned Region.
  
@@ -288,7 +292,7 @@ Another option to query data is to click the Data Browser table in Pulse. There 
 
 Type (rather than copy/paste) the same query into the web based Data browser in Pulse.  
 
-image::images/pulse-data-browser.png[]
+![image](https://user-images.githubusercontent.com/558905/32116667-97fe4494-bb19-11e7-8588-5e49d3738547.png)
 
 Since OQL queries objects that can contain methods, some interesting possibilities are available. 
 
