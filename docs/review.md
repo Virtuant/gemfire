@@ -10,10 +10,9 @@ gfsh (Gemfire shell) is a interactive command line interface that allows you to,
 
 Through out this lab gfsh will be used to start and stop processes and also to initiate other commands to the cluster.
 
-All instructions assume commands are being executed in gfsh and also that gfsh was launched from the folder of the  workspace.
+All instructions assume commands are being executed in gfsh and also that gfsh was launched from a new folder.
 
-To get this folder do the following:
-
+So do the following:
 
     $ gfsh
         _________________________     __
