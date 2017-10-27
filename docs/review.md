@@ -29,45 +29,47 @@ To get this folder do the following:
 gfsh is interactive and contains auto completes to assist users. This functionality can be triggered by pressing the tab key. Press tab now to list all the commands gfsh can perform.
 
 ## Starting The First Member of the Cluster
-The locator is a Pivotal GemFire process that tells new, connecting members/clients where running members are located and provides load balancing for server use.  
-This locator will be the first member in the cluster and will act as the membership coordinator as well as the management node.  
+
+The locator is a Pivotal GemFire process that tells new, connecting members/clients where running members are located and provides load balancing for server use. This locator will be the first member in the cluster and will act as the membership coordinator as well as the management node.
+
 Copy and paste the following command into gfsh:  
  
-start locator --name=locatorA --enable-cluster-configuration=false --J=-Dgemfire.http-service-port=7575
+    start locator --name=locatorA --enable-cluster-configuration=false --J=-Dgemfire.http-service-port=7575
  
 
 The command will produce an output similar to this:  
-
  
-gfsh>start locator --name=locatorA --enable-cluster-configuration=false --J=-Dgemfire.http-service-port=7575
-Starting a GemFire Locator in /home/gpadmin/Desktop/BigDataRoadshow/labs/locatorA...
-...
-Locator in /home/gpadmin/Desktop/BigDataRoadshow/labs/locatorA on ip-172-31-35-243.ec2.internal[10334] as locatorA is currently online.
-Process ID: 31260
-Uptime: 4 seconds
-GemFire Version: 8.1.0
-Java Version: 1.7.0_45
-Log File: /home/gpadmin/Desktop/BigDataRoadshow/labs/locatorA/locatorA.log
-JVM Arguments: -Dgemfire.enable-cluster-configuration=false -Dgemfire.load-cluster-configuration-from-dir=false -Dgemfire.http-service-port=7575 -Dgemfire.launcher.registerSignalHandlers=true -Djava.awt.headless=true -Dsun.rmi.dgc.server.gcInterval=9223372036854775806
-Class-Path: /opt/pivotal/gemfire/Pivotal_GemFire_810/lib/gemfire.jar:/opt/pivotal/gemfire/Pivotal_GemFire_810/lib/locator-dependencies.jar
-
-Successfully connected to: [host=ip-172-31-35-243.ec2.internal, port=1099]
+    gfsh>start locator --name=locatorA --enable-cluster-configuration=false --J=-Dgemfire.http-service-port=7575
+    Starting a GemFire Locator in /home/gpadmin/Desktop/BigDataRoadshow/labs/locatorA...
+    ...
+    Locator in /home/gpadmin/Desktop/BigDataRoadshow/labs/locatorA on ip-172-31-35-243.ec2.internal[10334] as locatorA is currently online.
+    Process ID: 31260
+    Uptime: 4 seconds
+    GemFire Version: 8.1.0
+    Java Version: 1.7.0_45
+    Log File: /home/gpadmin/Desktop/BigDataRoadshow/labs/locatorA/locatorA.log
+    JVM Arguments: -Dgemfire.enable-cluster-configuration=false -Dgemfire.load-cluster-configuration-from-dir=false -Dgemfire.http-service-port=7575 -Dgemfire.launcher.registerSignalHandlers=true -Djava.awt.headless=true -Dsun.rmi.dgc.server.gcInterval=9223372036854775806
+    Class-Path: /opt/pivotal/gemfire/Pivotal_GemFire_810/lib/gemfire.jar:/opt/pivotal/gemfire/Pivotal_GemFire_810/lib/locator-dependencies.jar
+    Successfully connected to: [host=ip-172-31-35-243.ec2.internal, port=1099]
  
-Congratulations, you now have the beginning of a Gemfire cluster.  
-Wait for the previous command to finish before preceding to the next step.  
+Congratulations, you now have the beginning of a Gemfire cluster! 
+  
 
 ## Log Into Pulse
-GemFire Pulse is a Web Application that provides a graphical dashboard for monitoring vital, real-time health and performance of GemFire clusters, members, and regions.  
-With the first locator started, Pulse is now available.  
-To use Pulse, open a browser and enter this URL in the address bar:  
-http://localhost:7575/pulse/Login.html  
 
-Alternatively the following command can be typed into gfsh to launch Pulse in the browser:  
-start pulse --url=http://localhost:7575/pulse
+GemFire Pulse is a Web Application that provides a graphical dashboard for monitoring vital, real-time health and performance of GemFire clusters, members, and regions. With the first locator started, Pulse is now available. 
+
+To use Pulse, open a browser and enter this URL in the address bar:  http://localhost:7575/pulse/Login.html  
+
+Alternatively the following command can be typed into gfsh to launch Pulse in the browser:
+
+    start pulse --url=http://localhost:7575/pulse
 
 Log into Pulse with the following credentials:  
+
 username: *admin*  
 password: *admin*  
+
 Once logged in click on green server box Icon in the Cluster View to see the Gemfire processes running on the server.  
 For the lab all processes will be on this machine.  
 
@@ -75,11 +77,12 @@ image::images/pulse-cluster-view.png[]
 
 
 ## Start another Locator
-This locator will join with the first giving the cluster fail over for Locator functionality.  
+
+This locator will join with the first giving the cluster fail over for Locator functionality. 
+
 Return to the gfsh session and enter the following command:  
 
- 
-start locator --name=locatorB --enable-cluster-configuration=false --locators=127.0.0.1[10334],127.0.0.1[10335] --port=10335 --J=-Dgemfire.http-service-port=7576
+    start locator --name=locatorB --enable-cluster-configuration=false --locators=127.0.0.1[10334],127.0.0.1[10335] --port=10335 --J=-Dgemfire.http-service-port=7576
  
 The resulting output should look like the following:  
  
