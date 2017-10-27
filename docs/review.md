@@ -73,8 +73,7 @@ Log into Pulse with the following credentials:
 Once logged in click on green server box Icon in the Cluster View to see the Gemfire processes running on the server.  
 For the lab all processes will be on this machine.
 
-![image](https://user-images.githubusercontent.com/558905/32116635-73ac8646-bb19-11e7-81f0-58f235f03ed4.png)
-
+![image](https://user-images.githubusercontent.com/558905/32116835-2edc96fe-bb1a-11e7-8b69-8086603e15a9.png)
 
 ## Start another Locator
 
@@ -162,7 +161,7 @@ At the end of this process a cluster with six members should be visible in gfsh 
     locatorA | 192.168.75.9(locatorA:72292:locator)<v0>:58229
     
 
-![image](https://user-images.githubusercontent.com/558905/32116645-7d1d609c-bb19-11e7-9eb2-424175fae1e7.png)
+![image](https://user-images.githubusercontent.com/558905/32116635-73ac8646-bb19-11e7-81f0-58f235f03ed4.png)
 
 
 ## Adding Regions
@@ -211,10 +210,12 @@ In the top banner of Pulse the Regions count will also show 1.
 
 By clicking the Data tab in Pulse the viewer will show one large region.  
 
+![image](https://user-images.githubusercontent.com/558905/32116645-7d1d609c-bb19-11e7-9eb2-424175fae1e7.png)
+
+
+By click on this grey box, Pulse will show how the data is distributed across the servers.
+
 ![image](https://user-images.githubusercontent.com/558905/32116652-85dc9c16-bb19-11e7-9a39-458608adc230.png)
-
-
-By click on this grey box, Pulse will show how the data is distributed across the servers.  
 
 ![image](https://user-images.githubusercontent.com/558905/32116658-8fdde44a-bb19-11e7-92b8-aa5986f491aa.png)
 
