@@ -2,7 +2,7 @@
 
 The purpose of this lab is to get a basic understanding of how a Gemfire cluster works and how it can be used.
 
- 
+----
 
 ## Exploring gfsh
 
@@ -15,17 +15,15 @@ All instructions assume commands are being executed in gfsh and also that gfsh w
 To get this folder do the following:
 
 
-$ pwd
-/home/gpadmin/Desktop/BigDataRoadshow/labs
-$ gfsh
-    _________________________     __
-   / _____/ ______/ ______/ /____/ /
-  / /  __/ /___  /_____  / _____  / 
- / /__/ / ____/  _____/ / /    / /  
-/______/_/      /______/_/    /_/    v8.1.0
+    $ gfsh
+        _________________________     __
+       / _____/ ______/ ______/ /____/ /
+      / /  __/ /___  /_____  / _____  / 
+     / /__/ / ____/  _____/ / /    / /  
+    /______/_/      /______/_/    /_/    v8.1.0
 
-Monitor and Manage GemFire
-gfsh>
+    Monitor and Manage GemFire
+    gfsh>
  
 
 gfsh is interactive and contains auto completes to assist users. This functionality can be triggered by pressing the tab key. Press tab now to list all the commands gfsh can perform.
