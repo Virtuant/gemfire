@@ -292,9 +292,6 @@ Type (rather than copy/paste) the same query into the web based Data browser in 
 
 ![image](https://user-images.githubusercontent.com/558905/32116658-8fdde44a-bb19-11e7-92b8-aa5986f491aa.png)
 
-
-![image](https://user-images.githubusercontent.com/558905/32116667-97fe4494-bb19-11e7-8588-5e49d3738547.png)
-
 Since OQL queries objects that can contain methods, some interesting possibilities are available. 
 
 ## Adding More Data
@@ -314,7 +311,7 @@ By clicking the Cluster View -> Data in the navigation bar of Pulse it can be se
 
 Click on this region (the big grey box) will show how the records are distributed.  
 
-image::images/transaction-region-distribution.png[]
+![image](https://user-images.githubusercontent.com/558905/32116667-97fe4494-bb19-11e7-8588-5e49d3738547.png)
 
 Leave this view open for the next step.
 
