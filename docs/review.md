@@ -217,9 +217,6 @@ By click on this grey box, Pulse will show how the data is distributed across th
 
 ![image](https://user-images.githubusercontent.com/558905/32116652-85dc9c16-bb19-11e7-9a39-458608adc230.png)
 
-![image](https://user-images.githubusercontent.com/558905/32116658-8fdde44a-bb19-11e7-92b8-aa5986f491aa.png)
-
-
 Now create a Partitioned Region.
  
     gfsh> create region --name=transaction --type=PARTITION --redundant-copies=1
@@ -292,6 +289,9 @@ Run this command in gfsh to select the record inserted in the previous step:
 Another option to query data is to click the Data Browser table in Pulse. There is a query editor where OQL can be entered. The results are displayed below.
 
 Type (rather than copy/paste) the same query into the web based Data browser in Pulse.  
+
+![image](https://user-images.githubusercontent.com/558905/32116658-8fdde44a-bb19-11e7-92b8-aa5986f491aa.png)
+
 
 ![image](https://user-images.githubusercontent.com/558905/32116667-97fe4494-bb19-11e7-8588-5e49d3738547.png)
 
