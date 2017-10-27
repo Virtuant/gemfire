@@ -144,9 +144,9 @@ To add the rest of the members in the grid, the commands look like this.
     gfsh> start server --name=serverC --use-cluster-configuration=false --server-port=0 --locators=127.0.0.1[10334],127.0.0.1[10335] --J=-Dgemfire.http-service-port=7579 --J=-Dgemfire.start-dev-rest-api=true --J=-Xms128m --J=-Xmx128m
     gfsh> start server --name=serverD --use-cluster-configuration=false --server-port=0 --locators=127.0.0.1[10334],127.0.0.1[10335] --J=-Dgemfire.http-service-port=7580 --J=-Dgemfire.start-dev-rest-api=true --J=-Xms128m --J=-Xmx128m
  
-To save time these have been bundled up into a single file that can be executed from gfsh. Execute the following command (this will only work if gfsh was started from the labs folder of the workspace):  
+To save time these have been bundled up into a single file that can be executed from gfsh. Execute the following command (your actual path may differ):
 
-    gfsh>run --file=gemfire/start-more-servers.gfsh
+    gfsh>run --file=[your path]/start-more-servers.gfsh
  
 At the end of this process a cluster with six members should be visible in gfsh and pulse.
  
@@ -298,9 +298,10 @@ Since OQL queries objects that can contain methods, some interesting possibiliti
 
 In this step data will be added to the Partitioned Region. To do this a gfsh script will be used.
  
-    gfsh> run --file=gemfire/transactions.gfsh
+    gfsh> run --file=[your path]/transactions.gfsh
  
 Messages will scroll past in gfsh showing all the puts occuring.  
+
 To get the number of records in the region, type and run this OQL query in gfsh or the data browser of Pulse (the query needs to be typed into the web based data browser - copy paste will not work):
  
     gfsh> query --query="select count(*) from /transaction"
